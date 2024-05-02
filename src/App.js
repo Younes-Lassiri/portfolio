@@ -1,23 +1,41 @@
-import logo from './logo.svg';
 import './App.css';
+import Contact from './Contact/Contact';
+import Footer from './Footer/Footer';
+import Landing from './Landing/Landing';
+import Loader from './Loader/Loader';
+import Recent from './Recent/Recent';
+import Resume from './Resume/Resume';
+import Services from './Services/Services';
+import Skills from './Skills/Skills';
+import { useState, useEffect } from 'react';
 
 function App() {
+
+
+
+  const [pageLoaded, setPageLoaded] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setPageLoaded(true);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (!pageLoaded) {
+    return <Loader/>;
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Landing/>
+      <Services/>
+      <Recent/>
+      <Resume/>
+      <Skills/>
+      <Contact/>
+      <Footer/>
     </div>
   );
 }
