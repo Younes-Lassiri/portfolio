@@ -6,19 +6,19 @@ body{
 .landing-section {
     position: relative;
     width: 100%;
-    background: #0f0715;
+    background: linear-gradient(to right, #fff, rgba(135, 80, 247, 0.05));
     overflow: hidden;
 }
 
 .hi {
     color: transparent;
-    font-size: 280px;
+    font-size: 250px;
     position: absolute;
     left: 50%;
     top: 35%;
     transform: translate(-50%, -50%);
-    text-stroke: 1px #8750f7;
-    -webkit-text-stroke: 1px #8750f7;
+    text-stroke: 1px #0f0715;
+    -webkit-text-stroke: 1px #0f0715;
     animation: 4s pulsate infinite alternate ease-in-out;
     opacity: 0.1;
     font-family: "IBM Plex Sans", sans-serif;
@@ -38,7 +38,7 @@ body{
         transform: translate(-50%, -50%) scale(1);
     }
 }
-
+/*
 .landing-section::before,
 .landing-section::after {
     content: "";
@@ -47,7 +47,7 @@ body{
     height: 100%;
     top: 0;
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
-}
+}*/
 
 .landing-section::before {
     left: 0;
@@ -75,13 +75,13 @@ body{
     z-index: 100;
   }
   .infosOne h1 span{
-    color: whitesmoke;
+    color: #0f0715;
     font-size: 40px;
     z-index: 100;
   }
   .infosOne p {
-    color: whitesmoke;
-    font-weight: 500;
+    color: #0f0715;
+    font-weight: 400;
     font-size: 16px;
     letter-spacing: 1px;
     line-height: 1.7em;
@@ -90,7 +90,7 @@ body{
 
   .infosOne h1 {
     font-size: 50px;
-    background: linear-gradient(to right, #8750f7 0%, #ffffff 100%);
+    background: linear-gradient(to right, #8750f7 0%, #0f0715 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -189,13 +189,13 @@ body{
     align-self: center;
     font-weight: 700;
     font-size: 55px;
-    color: #dddddd;
+    color: #8750f7;
     font-family: "Helvetica Neue", sans-serif;
 }
 .text{
     align-self: center;
     z-index: 100;
-    color: #dddddd;
+    color: #8750f7;
     font-size: 18px;
     font-family: Sora, sans-serif;
     z-index: 100;

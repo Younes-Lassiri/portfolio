@@ -1,31 +1,28 @@
 .contact-section{
-    background-color: #050709;
+    background-color: #F6F3FC;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 150px 90px;
 }
 
 .contact-left{
-    background-color: #140c1c;
+    background-color: #fff;
     border-radius: 15px;
     padding: 40px 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 input{
-    background-color: #050709;
+    background-color: #F6F3FC;
     border: 1px solid #22272c;
     font-size: 16px;
     line-height: 1;
-    color: #fff;
+    color: #0f0715;
     padding: 14px 20px;
     border-radius: 8px;
     transition: all 0.3s 0s ease-out;
     outline: none;
-}
-
-input:focus{
-    border: 1px solid #8750f7;
+    font-weight: 500;
 }
 
 
@@ -45,31 +42,26 @@ input::placeholder {
 
 
   textarea{
-    background-color: #050709;
+    background-color: #F6F3FC;
     border: 1px solid #22272c;
     font-size: 16px;
     line-height: 1;
-    color: #fff;
+    color: #0f0715;
     padding: 14px 20px;
     border-radius: 8px;
     transition: all 0.3s 0s ease-out;
     outline: none;
+    font-weight: 500;
     
 }
   
-
-
-textarea:focus{
-    border: 1px solid #8750f7;
-}
-
 
 
 
 .contact-title{
     grid-column: 1/3;
     font-size: 40px;
-    background: linear-gradient(to right, #8750f7 0%, #ffffff 100%);
+    background: linear-gradient(to right, #8750f7 0%, #0f0715 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -87,9 +79,9 @@ input[type='number']::-webkit-outer-spin-button {
 .contact-p{
     grid-column: 1/3;
     font-size: 16px;
-    color: #dddddd;
+    color: #000009;
     font-family: Sora, sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     margin: 15px 0 0;
 }
 
@@ -190,17 +182,22 @@ input[type='number']::-webkit-outer-spin-button {
 }
 
 .tt{
-    color: #dddddd;
-    font-weight: 700;
+    color: #000009;
+    font-weight: 400;
     font-size: 16px;
     font-family: Sora, sans-serif;
 }
 
 .yy{
-    color: #fff;
-    font-weight: 700;
+    color: #0f0715;
+    font-weight: 500;
     font-size: 20px;
     font-family: Sora, sans-serif;
+    letter-spacing: 1px;
+    transition: all 0.4s ease-in-out 0s;
+}
+.yy:hover{
+    color: #8750f7;
 }
 
 .contact-right{

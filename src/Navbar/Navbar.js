@@ -2,8 +2,10 @@ import React, { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { useEffect } from 'react'
 import { Link, animateScroll as scroll } from 'react-scroll';
-import './Navbar.css'
-export default function Navbar() {
+import './Navbar.css';
+import logo from './pic/20240705_232824.png'
+import { NavLink } from 'react-router-dom';
+export default function Navbar(props) {
     const [mobile, setMobile] = useState(false)
   const [isScrolling, setIsScrolling] = useState(false);
   const [visited, setVisited] = useState('a')
@@ -26,11 +28,13 @@ export default function Navbar() {
     <div>
         <div className={`navbar-section ${isScrolling ? 'isScrolling' : ''}`}>
         <div className='logo'>
-            <img src='https://i.ibb.co/5B8b7Jx/20240323-032456.png'/>
+            <NavLink to='/'>
+            <img src={props.detail === true & !isScrolling? 'https://i.ibb.co/5B8b7Jx/20240323-032456.png' : logo}/>
+            </NavLink>
         </div>
 
         <div className='email'>
-            <span>youneslassirifreelance@gmail.com</span>
+            <span style={props.detail === true & !isScrolling? {color: "white"}: {}}>youneslassirifreelance@gmail.com</span>
         </div>
 
         <div className='ul'>
@@ -43,7 +47,9 @@ export default function Navbar() {
                 smooth={true}
                 offset={-70}
                 duration={500}
-             style={{color: '#fff', cursor: 'pointer'}} className={visited === 'a'? 'active' : ''} onClick={() => setVisited('a')}>
+                style={props.detail === true & !isScrolling
+                    ? { color: '#fff', cursor: 'pointer' } 
+                    : { color: '#0f0715', cursor: 'pointer' }} className={visited === 'a'? '' : ''} onClick={() => setVisited('a')}>
                 Services
             </Link>
             </li>
@@ -56,7 +62,9 @@ export default function Navbar() {
                 smooth={true}
                 offset={-70}
                 duration={500}
-             style={{color: '#fff', cursor: 'pointer'}}  className={visited === 'b'? 'active' : ''} onClick={() => setVisited('b')}>
+                style={props.detail === true & !isScrolling
+                    ? { color: '#fff', cursor: 'pointer' } 
+                    : { color: '#0f0715', cursor: 'pointer' }}  className={visited === 'b'? 'active' : ''} onClick={() => setVisited('b')}>
                 Works
             </Link>
             </li>
@@ -69,7 +77,9 @@ export default function Navbar() {
                 smooth={true}
                 offset={-70}
                 duration={500}
-             style={{color: '#fff', cursor: 'pointer'}}  className={visited === 'c'? 'active' : ''} onClick={() => setVisited('c')}>
+                style={props.detail === true & !isScrolling
+                    ? { color: '#fff', cursor: 'pointer' } 
+                    : { color: '#0f0715', cursor: 'pointer' }}  className={visited === 'c'? 'active' : ''} onClick={() => setVisited('c')}>
                 Resume
             </Link>
             </li>
@@ -82,7 +92,9 @@ export default function Navbar() {
                 smooth={true}
                 offset={-70}
                 duration={500}
-             style={{color: '#fff', cursor: 'pointer'}} className={visited === 'd'? 'active' : ''} onClick={() => setVisited('d')}>
+                style={props.detail === true & !isScrolling
+                    ? { color: '#fff', cursor: 'pointer' } 
+                    : { color: '#0f0715', cursor: 'pointer' }} className={visited === 'd'? 'active' : ''} onClick={() => setVisited('d')}>
                 Skills
             </Link>
             </li>
@@ -95,7 +107,9 @@ export default function Navbar() {
                 smooth={true}
                 offset={-70}
                 duration={500}
-             style={{color: '#fff', cursor: 'pointer'}} className={visited === 'f'? 'active' : ''} onClick={() => setVisited('f')}>
+                style={props.detail === true & !isScrolling
+                    ? { color: '#fff', cursor: 'pointer' } 
+                    : { color: '#0f0715', cursor: 'pointer' }} className={visited === 'f'? 'active' : ''} onClick={() => setVisited('f')}>
                 Contact
             </Link>
             </li>
@@ -110,9 +124,9 @@ export default function Navbar() {
 
 
         <div className="hamburger-toggle humb" onClick={() => setMobile(!mobile)}>
-                <span className="line top"></span>
-                <span className="line middle"></span>
-                <span className="line bottom"></span>
+                <span className="line top" style={props.detail === true? {backgroundColor:'#8750f7'}: {}} ></span>
+                <span className="line middle" style={props.detail === true? {backgroundColor:'#8750f7'}: {}} ></span>
+                <span className="line bottom" style={props.detail === true? {backgroundColor:'#8750f7'}: {}} ></span>
             </div>
     </div>
 

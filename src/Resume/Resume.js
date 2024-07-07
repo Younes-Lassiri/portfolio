@@ -1,6 +1,8 @@
 import React from 'react'
 import './Resume.css'
 import 'boxicons'
+import exp from './pic/aaaex-removebg-preview (1).png'
+import ep from './pic/aaaape-removebg-preview.png'
 export default function Resume() {
   return (
     <div className='resume-section' id='resume'>
@@ -8,7 +10,7 @@ export default function Resume() {
 
         <div className='experience'>
         <div className='experienceLogo'>
-            <box-icon name='certification' color='#8750F7' size='45px'></box-icon>
+            <img src={exp}/>
         </div>
             <div className='experience-title'>My Experience</div>
 
@@ -45,7 +47,7 @@ export default function Resume() {
 
         <div className='education'>
             <div className='educationLogo'>
-            <box-icon name='graduation' type='solid' color='#8750F7' size='45px'></box-icon>
+            <img src={ep}/>
             </div>
             <div className='education-title'>My Education</div>
 

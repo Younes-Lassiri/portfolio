@@ -1,5 +1,6 @@
 import './App.css';
 import Contact from './Contact/Contact';
+import Detailone from './Detailone/Detailone';
 import Footer from './Footer/Footer';
 import Landing from './Landing/Landing';
 import Loader from './Loader/Loader';
@@ -8,7 +9,7 @@ import Resume from './Resume/Resume';
 import Services from './Services/Services';
 import Skills from './Skills/Skills';
 import { useState, useEffect } from 'react';
-
+import { BrowserRouter,Route,Routes } from 'react-router-dom';
 function App() {
 
 
@@ -28,15 +29,22 @@ function App() {
   }
 
   return (
-    <div>
-      <Landing/>
-      <Services/>
-      <Recent/>
-      <Resume/>
-      <Skills/>
-      <Contact/>
-      <Footer/>
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={
+        (<div>
+          <Landing/>
+          <Services/>
+          <Recent/>
+          <Resume/>
+          <Skills/>
+          <Contact/>
+          <Footer detail={true}/>
+        </div>)
+      }/>
+      <Route path='/portfolios/:id/:name' element={<Detailone/>}/>
+    </Routes>
+    </BrowserRouter>
   );
 }
 

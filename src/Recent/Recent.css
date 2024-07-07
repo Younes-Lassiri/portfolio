@@ -1,5 +1,5 @@
 .recent-section{
-    background-color: #0f0715;
+    background-color: #ffffff;
     display: grid;
     padding: 80px 0;
     grid-template-columns: 1fr;
@@ -11,10 +11,11 @@
     justify-self: center;
 }
 
+
 .recent-p p{
-    color: #dddddd;
+    color: #000009;
     font-size: 17px;
-    font-weight: 600;
+    font-weight: 400;
 }
 .recent-p{
     padding: 15px 0;
@@ -24,7 +25,7 @@
 
 .recent-section h1 {
     font-size: 50px;
-    background: linear-gradient(to right, #8750f7 0%, #ffffff 100%);
+    background: linear-gradient(to right, #8750f7 0%, #0f0715 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -35,8 +36,8 @@
 
 .recent-ul li{
     list-style-type: none;
-    color: whitesmoke;
-    font-weight: 600;
+    color: #8750f7;
+    font-weight: 400;
 }
 
 
@@ -45,7 +46,7 @@
     justify-self: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    background-color: #050709;
+    background-color: #f6f3fc;
     border-radius: 50px;
 }
 
@@ -54,6 +55,18 @@
     background: linear-gradient(to right, #4b4b97, #0f0715);
     animation: fadeRight 1s alternate;
     
+}
+.un li{
+    color: #fff;
+}
+.deux li{
+    color: #fff;
+}
+.trois li{
+    color: #fff;
+}
+.quatre li{
+    color: #fff;
 }
 
 @keyframes fadeRight{
@@ -119,7 +132,7 @@
 .project-section{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 50px;
+    grid-gap: 45px;
     padding: 60px 0;
 }
 
@@ -153,24 +166,25 @@
     height: 100%;
 }
 
-
-.project-section-two{
-    width: 80%;
+.project-section-one{
+    width: 95%;
     background-color: #140c1c;
     border-radius: 10px;
-    padding: 36px 36px 0 36px;
+    padding: 23px 23px 0 23px;
+    justify-self: end;
+    position: relative;
+}
+
+.project-section-two{
+    width: 95%;
+    background-color: #140c1c;
+    border-radius: 10px;
+    padding: 23px 23px 0 23px;
     justify-self: start;
     position: relative;
 }
 
-.project-section-one{
-    width: 80%;
-    background-color: #140c1c;
-    border-radius: 10px;
-    padding: 36px 36px 0 36px;
-    justify-self: end;
-    position: relative;
-}
+
 
 .project-section-one .showUp h3{
     color: white;
@@ -209,15 +223,16 @@
 .showUp .showUp-one{
     height: 100px;
     color: #dddddd;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 13px;
     padding: 10px;
+    letter-spacing: 1px;
 }
 
 .showUp .showUp-one h3{
     color: white;
-    font-weight: 800;
-    font-size: 25px;
+    font-weight: 700;
+    font-size: 23px;
 }
 
 
@@ -282,15 +297,18 @@
 .showUpTwo .showUpTwo-one{
     height: 100px;
     color: #dddddd;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 12px;
     padding: 10px;
+    letter-spacing: 1px;
+    text-align: right;
+    direction: rtl
 }
 
 .showUpTwo .showUpTwo-one h3{
     color: white;
-    font-weight: 800;
-    font-size: 25px;
+    font-weight: 700;
+    font-size: 23px;
 }
 
 
@@ -317,12 +335,6 @@
 .project-section-two:hover .showUpTwo{
     display: grid;
 }
-
-
-
-
-
-
 
 @media only screen and (max-width: 767px) {
     .project-section{

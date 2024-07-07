@@ -17,7 +17,7 @@ export default function Skills() {
             </div>
 
             <div className='name'>
-            <div className='logoTwo item'><img src='https://themejunction.net/html/gerold/demo/assets/img/icons/wp.svg'/><span>80%</span></div><div className='hh'>Wordpress</div>
+            <div className='logoTwo item'><img src='https://themejunction.net/html/gerold/demo/assets/img/icons/wp.svg'/><span>85%</span></div><div className='hh'>Wordpress</div>
             </div>
 
 
@@ -30,11 +30,11 @@ export default function Skills() {
             </div>
 
             <div className='name'>
-            <div className='logoFive item'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png'/><span>60%</span></div><div className='hh'>Laravel</div>
+            <div className='logoFive item'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png'/><span>80%</span></div><div className='hh'>Laravel</div>
             </div>
 
             <div className='name'>
-            <div className='logoSix item'><img src={phpLogo}/><span>60%</span></div><div className='hh'>Php</div>
+            <div className='logoSix item'><img src={phpLogo}/><span>80%</span></div><div className='hh'>Php</div>
             </div>
 
         </div>
