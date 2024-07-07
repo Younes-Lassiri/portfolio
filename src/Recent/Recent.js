@@ -37,7 +37,6 @@ export default function Recent() {
                 <div>
                     <img src={frontGizlanding}/>
                 </div>
-
                 <Link to='/portfolios/0/y&m-Royal-Chic'>
                 <div className='showUp'>
                     <div className='showUp-one'>
