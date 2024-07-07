@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import frontGizLanding from './Images/m7kamaLanding.png';
-import m7kamaLanding from './Images/m7kamaLanding.png'
+import front from './Images/front.png';
+import cour from './Images/cour.png';
 import './Recent.css'
 import { Link } from 'react-router-dom'
 function isMobileDevice() {
@@ -35,7 +35,7 @@ export default function Recent() {
 
             <div className='project-section-one'>
                 <div>
-                    <img src={frontGizLanding}/>
+                    <img src={front}/>
                 </div>
                 <Link to='/portfolios/0/y&m-Royal-Chic'>
                 <div className='showUp'>
@@ -50,7 +50,7 @@ export default function Recent() {
             
             <div className='project-section-two'>
             <div>
-                    <img src={m7kamaLanding}/>
+                    <img src={cour}/>
                 </div>
                 <Link to='/portfolios/1/cour-appel-laayoune'>
                 <div className='showUpTwo'>
