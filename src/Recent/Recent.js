@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import frontGizlanding from './Images/frontGizLanding.png'
+import frontGizLanding from './Images/frontGizLanding.png';
 import m7kamaLanding from './Images/m7kamaLanding.png'
 import './Recent.css'
 import { Link } from 'react-router-dom'
@@ -35,7 +35,7 @@ export default function Recent() {
 
             <div className='project-section-one'>
                 <div>
-                    <img src={frontGizlanding}/>
+                    <img src={frontGizLanding}/>
                 </div>
                 <Link to='/portfolios/0/y&m-Royal-Chic'>
                 <div className='showUp'>
