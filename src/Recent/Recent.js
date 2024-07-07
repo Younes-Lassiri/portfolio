@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import frontGizLanding from './Images/frontGizLanding.png';
+import frontGizLanding from './Images/m7kamaLanding.png';
 import m7kamaLanding from './Images/m7kamaLanding.png'
 import './Recent.css'
 import { Link } from 'react-router-dom'
