@@ -8,6 +8,11 @@ import twom from './pics/twom.jpeg'
 import fivem from './pics/fivem.jpeg'
 import sixm from './pics/sixm.jpeg'
 import sevenm from './pics/sevenm.jpeg'
+import weaone from './pics/weaone.PNG'
+import weatwo from './pics/weatwo.PNG'
+import weathree from './pics/weathree.PNG'
+import weafour from './pics/weafour.PNG'
+import weafive from './pics/weafive.PNG'
 const project = [
     {
         id: 0,
@@ -40,6 +45,22 @@ const project = [
         descs: 'The Court of Appeal submits its positionThe new electronic system, keeping pace with the historical transformation taking place in MoroccoIn building a state of rights and democratic institutions, and consolidating the principles of good governanceAnd achieving social justice. This site seeks to provide interactive servicesEnables citizens to submit their complaints and receive responses with ease.Our new website expresses our full commitment to the contents of the new constitutionThe vision of His Majesty King Mohammed VI, may God protect him, reflects our will to provide an environment Interactive, ensuring transparency and responsibility in providing judicial services.',
         story: 'The Court of Appeal submits its positionThe new electronic system, keeping pace with the historical transformation taking place in MoroccoIn building a state of rights and democratic institutions, and consolidating the principles of good governanceAnd achieving social justice. This site seeks to provide interactive servicesEnables citizens to submit their complaints and receive responses with ease.Our new website expresses our full commitment to the contents of the new constitutionThe vision of His Majesty King Mohammed VI, may God protect him, reflects our will to provide an environment Interactive, ensuring transparency and responsibility in providing judicial services.',
         approach: 'The Court of Appeal submits its positionThe new electronic system, keeping pace with the historical transformation taking place in MoroccoIn building a state of rights and democratic institutions, and consolidating the principles of good governanceAnd achieving social justice. This site seeks to provide interactive servicesEnables citizens to submit their complaints and receive responses with ease.Our new website expresses our full commitment to the contents of the new constitutionThe vision of His Majesty King Mohammed VI, may God protect him, reflects our will to provide an environment Interactive, ensuring transparency and responsibility in providing judicial services.',
+    },
+	{
+        id: 2,
+        name: 'Weather app',
+        mainPic: weaone,
+        category: ['Web design','Rest Api'],
+        client: 'Weather app',
+        start_date: 'July 08, 2024',
+        designer: 'YounesLassiri',
+        desc: 'The weather application is a web-based tool designed to provide users with up-to-date weather information for locations worldwide. Built using React and Axios, it leverages the WeatherAPI to fetch and display weather data. Users can enter a location to view current weather conditions, including temperature, humidity, wind speed, and a brief description of the weather conditions. The application also supports fetching a 15-day weather forecast using the forecast.json endpoint from the WeatherAPI. This project aims to offer a user-friendly interface that dynamically updates based on user input, providing accurate and detailed weather information.',
+        pics: [
+            weatwo, weathree, weafour, weafive
+        ],
+        descs: 'The weather application is a web-based tool designed to provide users with up-to-date weather information for locations worldwide. Built using React and Axios, it leverages the WeatherAPI to fetch and display weather data. Users can enter a location to view current weather conditions, including temperature, humidity, wind speed, and a brief description of the weather conditions. The application also supports fetching a 15-day weather forecast using the forecast.json endpoint from the WeatherAPI. This project aims to offer a user-friendly interface that dynamically updates based on user input, providing accurate and detailed weather information.',
+        story: 'Imagine you wake up to plan your day, whether it"s a morning jog, a picnic with friends, or a road trip. You want to know what the weather will be like, not just for today but also for the coming days. This is where WeatherApp comes in handy.',
+        approach: 'Our approach for the weather application focuses on delivering a seamless user experience through a modern, React-based interface. By leveraging Axios for efficient data fetching from the WeatherAPI, we ensure real-time weather updates and a 15-day forecast capability. Integrating i18next enables clear location name translations, catering to global users. Our development emphasizes responsive design principles, meticulous testing across devices, and iterative refinement based on user feedback. This approach aims to provide users with a reliable, intuitive tool for accessing accurate weather information effortlessly, whether they"re planning daily activities or long-term travel plans.',
     }
 ]
 
