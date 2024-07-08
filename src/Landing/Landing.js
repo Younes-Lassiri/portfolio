@@ -3,7 +3,7 @@ import './Landing.css'
 import 'boxicons'
 import Navbar from '../Navbar/Navbar'
 import hi from './images/hi.png'
-
+import my_cv from './images/Younes-Laasiri-Cv.pdf'
 export default function Landing() {
       
   return (
@@ -17,7 +17,9 @@ export default function Landing() {
 
             <div className='buttons'>
                 <div>
+                <a href={my_cv} download="Younes-Laasiri-Cv.pdf" style={{textDecoration: 'none'}}>
                 <button type="">Download Cv <box-icon name='download' color='#8750f7' ></box-icon></button>
+                </a>
                 </div>
 
                 <div className='social-icons'>

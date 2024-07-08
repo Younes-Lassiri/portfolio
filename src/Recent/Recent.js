@@ -23,7 +23,6 @@ export default function Recent() {
           ) : <p>We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.</p> }
         </div>
 
-
         <div className='recent-ul'>
                 <div className={clicked === 'un'? `recent-one ${clicked}` : 'recent-one'} onClick={() => setClicked('un')}><li>All</li></div>
                 <div className={clicked === 'deux'? `recent-two ${clicked}` : 'recent-two'} onClick={() => setClicked('deux')}><li>UX/UI</li></div>
