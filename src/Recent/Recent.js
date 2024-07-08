@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import front from './Images/front.png';
 import cour from './Images/cour.png';
+import weather from './Images/weather.png'
 import './Recent.css'
 import { Link } from 'react-router-dom'
 function isMobileDevice() {
@@ -14,6 +15,23 @@ export default function Recent() {
     useEffect(() => {
       setIsMobile(isMobileDevice() ? 1 : 0);
     }, []);
+    function app(){
+      return(
+        <div className='project-section-one'>
+                <div>
+                    <img src={weather}/>
+                </div>
+                <Link to='/portfolios/2/weather_app'>
+                <div className='showUp'>
+                    <div className='showUp-one'>
+                        <h3>Weather App</h3>
+                        The weather application is a web-based tool designed to provide users with up-to-date weather information for locations worldwide.</div>
+                    <div className='showUp-two'>↑</div>
+                </div>
+                </Link>
+            </div>
+      )
+    }
   return (
     <div className='recent-section' id='works'>
         <div className='recent-title'><h1>My Recent Works</h1></div>
@@ -32,7 +50,9 @@ export default function Recent() {
         
         <div className="project-section">
 
-            <div className='project-section-one'>
+            {clicked === 'quatre'? app() : (
+              <>
+                <div className='project-section-one'>
                 <div>
                     <img src={front}/>
                 </div>
@@ -63,6 +83,21 @@ export default function Recent() {
 
 
             </div>
+            <div className='project-section-one'>
+                <div>
+                    <img src={weather}/>
+                </div>
+                <Link to='/portfolios/2/weather_app'>
+                <div className='showUp'>
+                    <div className='showUp-one'>
+                        <h3>Weather App</h3>
+                        The weather application is a web-based tool designed to provide users with up-to-date weather information for locations worldwide.</div>
+                    <div className='showUp-two'>↑</div>
+                </div>
+                </Link>
+            </div>
+              </>
+            )}
 
         </div>
 
