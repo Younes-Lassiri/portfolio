@@ -31,17 +31,7 @@ function App() {
   return (
     <BrowserRouter>
     <Routes>
-      <Route path='/' element={
-        (<div>
-          <Landing/>
-          <Services/>
-          <Recent/>
-          <Resume/>
-          <Skills/>
-          <Contact/>
-          <Footer detail={true}/>
-        </div>)
-      }/>
+      <Route path='/' element={<Landing/>}/>
       <Route path='/portfolios/:id/:name' element={<Detailone/>}/>
     </Routes>
     </BrowserRouter>

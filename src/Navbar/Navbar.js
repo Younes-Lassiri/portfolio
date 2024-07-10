@@ -24,6 +24,11 @@ export default function Navbar(props) {
       setIsScrolling(false);
     }
   };
+
+  function hideNav(a){
+    setVisited(a)
+    setMobile(false)
+  }
   return (
     <div>
         <div className={`navbar-section ${isScrolling ? 'isScrolling' : ''}`}>
@@ -118,7 +123,19 @@ export default function Navbar(props) {
 
 
         <div className='button'>
-            <button type="">Hire Me!</button>
+            
+
+
+            <Link
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                style={{color: '#fff', cursor: 'pointer'}} className={visited === 'f'? 'active' : ''} onClick={() => setVisited('f')}>
+                <button type="">Hire Me!</button>
+            </Link>
             
         </div>
 
@@ -140,7 +157,7 @@ export default function Navbar(props) {
                 smooth={true}
                 offset={-70}
                 duration={500}
-             style={{color: '#fff', cursor: 'pointer'}} className={visited === 'a'? 'active' : ''} onClick={() => setVisited('a')}>
+             style={{color: '#0f0715', cursor: 'pointer'}} className={visited === 'a'? 'active' : ''} onClick={() => hideNav('a')}>
                 Services
             </Link>
             </div>
@@ -154,7 +171,7 @@ export default function Navbar(props) {
                 smooth={true}
                 offset={-70}
                 duration={500}
-             style={{color: '#fff', cursor: 'pointer'}}  className={visited === 'b'? 'active' : ''} onClick={() => setVisited('b')}>
+             style={{color: '#0f0715', cursor: 'pointer'}}  className={visited === 'b'? 'active' : ''} onClick={() => hideNav('b')}>
                 Works
             </Link>
             </div>
@@ -167,7 +184,7 @@ export default function Navbar(props) {
                 smooth={true}
                 offset={-70}
                 duration={500}
-             style={{color: '#fff', cursor: 'pointer'}}  className={visited === 'c'? 'active' : ''} onClick={() => setVisited('c')}>
+             style={{color: '#0f0715', cursor: 'pointer'}}  className={visited === 'c'? 'active' : ''} onClick={() => hideNav('c')}>
                 Resume
             </Link>
             </div>
@@ -180,7 +197,7 @@ export default function Navbar(props) {
                 smooth={true}
                 offset={-70}
                 duration={500}
-             style={{color: '#fff', cursor: 'pointer'}} className={visited === 'd'? 'active' : ''} onClick={() => setVisited('d')}>
+             style={{color: '#0f0715', cursor: 'pointer'}} className={visited === 'd'? 'active' : ''} onClick={() => hideNav('d')}>
                 Skills
             </Link>
             </div>
@@ -193,10 +210,13 @@ export default function Navbar(props) {
                 smooth={true}
                 offset={-70}
                 duration={500}
-             style={{color: '#fff', cursor: 'pointer'}} className={visited === 'f'? 'active' : ''} onClick={() => setVisited('f')}>
+             style={{color: '#0f0715', cursor: 'pointer'}} className={visited === 'f'? 'active' : ''} onClick={() => hideNav('f')}>
                 Contact
             </Link>
             </div>
+            <div></div>
+            <div></div>
+            <div></div>
     </div>
     </div>
     

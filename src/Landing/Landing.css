@@ -9,6 +9,9 @@ body{
     background: linear-gradient(to right, #fff, rgba(135, 80, 247, 0.05));
     overflow: hidden;
 }
+/*
+
+*/
 
 .hi {
     color: transparent;
@@ -38,17 +41,27 @@ body{
         transform: translate(-50%, -50%) scale(1);
     }
 }
-/*
-.landing-section::before,
-.landing-section::after {
+
+.landing-infos{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: calc(100vh - 80px);
+    width: 100%;
+    align-items: center;
+    z-index: 100;
+  }
+
+/*.landing-infos::before,
+.landing-infos::after {
     content: "";
     position: absolute;
     width: 50%;
     height: 100%;
     top: 0;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
-}*/
-
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.048), rgba(0, 0, 0, 0));
+}
+*/
 .landing-section::before {
     left: 0;
     transform: skewX(-25deg);
@@ -61,14 +74,7 @@ body{
 
 
 
-.landing-infos{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: calc(100vh - 80px);
-    width: 100%;
-    align-items: center;
-    z-index: 100;
-  }
+
   .infosOne{
     justify-self: end;
     padding: 0 50px;
@@ -150,7 +156,6 @@ body{
     background-color: transparent;
     z-index: 100;
 }
-
 .infosOne .buttons button:hover{
     background-color: #8750f7;
     color: whitesmoke;

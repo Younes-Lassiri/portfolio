@@ -178,13 +178,13 @@
 
 .ul-mobilet{
     display: none;
-    position: sticky;
+    position: fixed;
     top: 90px;
     z-index: 500;
     width: 100%;
 }
 
-
+/*
   .ul-mobilet::before,
 .ul-mobilet::after {
     content: "";
@@ -193,7 +193,7 @@
     height: 100%;
     top: 0;
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
-}
+}*/
 
 .ul-mobilet::before {
     left: 0;
@@ -233,8 +233,8 @@
         z-index: 100;
     }
     .ul-mobilet{
-        background-color: #0f0715;
         padding: 30px 0;
+        background-color: #F6F3FC;
         height: calc(100vh - 90px);
         z-index: 200;
         list-style-type: none;
@@ -243,11 +243,12 @@
     }
 
     .ul-mobilet div{
-        justify-self: center;
+        justify-self: start;
+        padding-left: 35px;
     }
     .ul-mobilet a {
         text-decoration: none;
-        color: white;
+        color: #fff;
         letter-spacing: 1px;
         font-size: 18px;
         font-weight: 700;
@@ -256,7 +257,6 @@
         z-index: 200;
 
     }
-
 }
 
 

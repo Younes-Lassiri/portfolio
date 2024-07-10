@@ -1,16 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Landing.css'
 import 'boxicons'
 import Navbar from '../Navbar/Navbar'
 import hi from './images/hi.png'
+
 import my_cv from './images/Younes-Laasiri-Cv.pdf'
+import Services from '../Services/Services'
+import Recent from '../Recent/Recent'
+import Resume from '../Resume/Resume'
+import Skills from '../Skills/Skills'
+import Contact from '../Contact/Contact'
+import Footer from '../Footer/Footer'
 export default function Landing() {
-      
+      const[hov,sethov] = useState(false)
   return (
-    <div className='landing-section'>
-        <text className="hi">HI</text>
+<div className='landing-section'>
         <Navbar/>
         <div className='landing-infos'>
+        <text className="hi">HI</text>
         <div className='infosOne'>
             <h1><span>I am Younes</span><br></br>Full Stack Developer +<br></br>UX Designer</h1>
             <p>As a full-stack developer, I deconstruct intricate technological challenges to engineer holistic solutions that seamlessly integrate across diverse platforms, enriching the digital experience for millions worldwide.</p>
@@ -18,7 +25,7 @@ export default function Landing() {
             <div className='buttons'>
                 <div>
                 <a href={my_cv} download="Younes-Laasiri-Cv.pdf" style={{textDecoration: 'none'}}>
-                <button type="">Download Cv <box-icon name='download' color='#8750f7' ></box-icon></button>
+                <button type="" onMouseEnter={() => sethov(true)}>Download Cv <box-icon name='download' color={hov? '#fff' : '#8750f7'} ></box-icon></button>
                 </a>
                 </div>
 
@@ -49,7 +56,7 @@ export default function Landing() {
     <div className='numbers'>
         
     <div className='part'>
-        <div className='num'>14</div>
+        <div className='num'>2</div>
         <div className='text'>Years of<br></br>Experience</div>
     </div>
 
@@ -69,6 +76,12 @@ export default function Landing() {
     </div>
 
     </div>
+    <Services/>
+          <Recent/>
+          <Resume/>
+          <Skills/>
+          <Contact/>
+          <Footer detail={true}/>
     </div>
   )
 }
