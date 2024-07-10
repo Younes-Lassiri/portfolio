@@ -39,7 +39,7 @@ export default function Detailone() {
               {project.desc}
             </div>
             <div className='royalChicDetailOneOneThree'>
-              <a href='https://my-store-henna-theta.vercel.app/' target='_blank'>
+              <a href={project.preview} target='_blank'>
               <button type="">live preview <span>↑</span></button>
               </a>
             </div>

@@ -16,6 +16,7 @@ import weafive from './pics/weafive.PNG'
 const project = [
     {
         id: 0,
+		preview: 'https://my-store-henna-theta.vercel.app/',
         name: 'Y&M Royal Chic',
         mainPic: one,
         category: ['Web design'],
@@ -32,6 +33,7 @@ const project = [
     },
     {
         id: 1,
+		preview: 'https://justice-window.infinityfreeapp.com/',
         name: 'Cour Appel Laayoune',
         mainPic: onem,
         category: ['Web design', 'Web development'],
@@ -48,6 +50,7 @@ const project = [
     },
 	{
         id: 2,
+		preview: 'https://weather-app-coral-ten-98.vercel.app/',
         name: 'Weather app',
         mainPic: weaone,
         category: ['Web design','Rest Api'],
